@@ -1,0 +1,24 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  &:hover, :focus {
+    color: @pink;
+    background-color: @white;
+  }
+  &:active {
+    color: @pink-30;
+    background-color: @white;
+  }
+}
