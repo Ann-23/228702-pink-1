@@ -1,0 +1,55 @@
+.photo {
+  position: relative;
+}
+
+.photo__title {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 19px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @sec-color;
+}
+
+.photo__comment {
+  box-sizing: border-box;
+  padding: 20px 22px 17px 17px;
+  background-color: @light-grey;
+}
+
+.photo__counter {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.photo__likes {
+  position: relative;
+
+  margin: 0;
+  padding-top: 9px;
+  padding-left: 32px;
+
+  font-size: 12px;
+  color: @pink;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}

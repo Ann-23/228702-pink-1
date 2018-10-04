@@ -7,6 +7,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
   &.controls__toggle::before {
     content: "";
     position: absolute;
@@ -17,12 +18,15 @@
     background-color: @blue-dark-30;
     border-radius: 50%;
   }
+
   &.controls__toggle:hover::before {
     background-color: @blue-dark-60;
   }
+
   &.controls__toggle:active::before {
     background-color: @blue-dark-10;
   }
+
   &.controls__toggle--active::before {
     content: "";
     position: absolute;
@@ -30,13 +34,14 @@
     left: -4px;
     width: 8px;
     height: 8px;
-    background-color:  transparent;
+    background-color: transparent;
     border: 3px solid @black;
     border-radius: 50%;
   }
+
   &.controls__toggle--active:hover::before,
-   .controls__toggle--active:focus::before,
-   .controls__toggle--active:active::before {
+  .controls__toggle--active:focus::before,
+  .controls__toggle--active:active::before {
     background-color: transparent;
   }
 }
