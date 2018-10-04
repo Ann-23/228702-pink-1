@@ -8,7 +8,7 @@
   border: none;
   background-color: transparent;
 
-  &.controls__toggle::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -19,15 +19,17 @@
     border-radius: 50%;
   }
 
-  &.controls__toggle:hover::before {
+  &:hover::before {
     background-color: @blue-dark-60;
   }
 
-  &.controls__toggle:active::before {
+  &:active::before {
     background-color: @blue-dark-10;
   }
+}
 
-  &.controls__toggle--active::before {
+.controls__toggle--active {
+  &::before {
     content: "";
     position: absolute;
     top: -4px;
@@ -39,9 +41,9 @@
     border-radius: 50%;
   }
 
-  &.controls__toggle--active:hover::before,
-  .controls__toggle--active:focus::before,
-  .controls__toggle--active:active::before {
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
     background-color: transparent;
   }
 }
