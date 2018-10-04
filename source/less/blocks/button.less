@@ -14,8 +14,12 @@
   border: 2px solid white;
   border-radius: 50px;
 
-  &:hover,
-  :focus {
+  &:hover {
+    color: @sec-color;
+    background-color: @white
+  }
+
+  &:focus {
     color: @sec-color;
     background-color: @white;
   }
@@ -23,5 +27,72 @@
   &:active {
     color: @pink-30;
     background-color: @white;
+  }
+
+  &.button--green {
+    padding: 22px;
+    text-transform: uppercase;
+    background-color: @green;
+    border: none;
+    border-radius: 0;
+
+    &:hover {
+      color: @white;
+      background-color: @green-dark;
+    }
+
+    &:focus {
+      color: @white;
+      background-color: @green-dark;
+    }
+
+    &:active {
+      color: @white-30;
+      background-color: @green-dark;
+    }
+  }
+
+  &.button--post {
+    margin-bottom: 12px;
+    color: @sec-color;
+    border-color: @sec-color;
+
+    &:hover {
+      color: @white;
+      background-color: @sec-color;
+    }
+
+
+    &:focus {
+      color: @white;
+      background-color: @sec-color;
+    }
+
+    &:active {
+      color: @white-30;
+    }
+  }
+
+  &.button--cancel {
+    color: @blue-dark-10;
+    border-color: @blue-dark-10;
+
+    &:hover {
+      color: @blue-dark-30;
+      background-color: transparent;
+      border-color: @blue-dark-30;
+    }
+
+    &:focus {
+      color: @blue-dark-30;
+      background-color: transparent;
+      border-color: @blue-dark-30;
+    }
+
+    &:active {
+      color: @white-30;
+      border: none;
+      background-color: @blue-dark-30;
+    }
   }
 }
