@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Pink-photo</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <div class="main-nav__elements">
             <a class="page-header__link logo" href="index.html" aria-label="Логотип">
+              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип">
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
@@ -36,13 +38,14 @@
       <section class="top">
         <h1 class="top__title">Фотографии пользователей</h1>
       </section>
-      <div class="caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
+      <div class="caption container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
       <section class="photos">
         <h2 class="visually-hidden">Лента с фото</h2>
         <article class="photos__header">
           <div class="photo photo--header">
             <span class="photo__title">Панорама дня</span>
-            <div class="photo__wrap">
+            <img class="photo__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            <div class="photo__wrap container">
               <div class="photo__comment photo__comment--header">
                 <b class="photo__name">Анна</b>
                 <span class="photo__counter">(5 минут назад)</span>
@@ -53,8 +56,9 @@
           </div>
         </article>
         <div class="photos__intro">
-          <article class="photo">
+          <article class="photo container">
             <a class="photo__link" href="#" aria-label="Фото из галереи">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Car">
             </a>
             <div class="photo__comment">
               <b class="photo__name">Левон</b>
@@ -63,8 +67,9 @@
               <p class="photo__likes">Нравится: 356</p>
             </div>
           </article>
-          <article class="photo">
+          <article class="photo container">
               <a class="photo__link" href="#" aria-label="Фото из галереи">
+                <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Drumset">
               </a>
             <div class="photo__comment">
               <b class="photo__name">Антон</b>
@@ -73,8 +78,9 @@
               <p class="photo__likes photo__likes--other-top">Нравится: 666</p>
             </div>
           </article>
-          <article class="photo">
+          <article class="photo container">
             <a class="photo__link" href="#" aria-label="Фото из галереи">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Window">
             </a>
             <div class="photo__comment">
               <b class="photo__name">Борис</b>
@@ -83,8 +89,9 @@
               <p class="photo__likes">Нравится: 215</p>
             </div>
           </article>
-          <article class="photo">
+          <article class="photo container">
             <a class="photo__link" href="#" aria-label="Фото из галереи">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Fair">
             </a>
             <div class="photo__comment">
               <b class="photo__name">Сергей</b>
@@ -93,8 +100,9 @@
               <p class="photo__likes photo__likes--other-top">Нравится: 4</p>
             </div>
           </article>
-          <article class="photo">
+          <article class="photo container">
             <a class="photo__link" href="#" aria-label="Фото из галереи">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"alt="Legs">
             </a>
             <div class="photo__comment">
               <b class="photo__name">Максим</b> <span class="photo__counter">(40 часов назад)</span>
@@ -102,8 +110,9 @@
               <p class="photo__likes photo__likes--other-top">Нравится: 150</p>
             </div>
           </article>
-          <article class="photo">
+          <article class="photo container">
             <a class="photo__link" href="#" aria-label="Фото из галереи">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Wing">
             </a>
             <div class="photo__comment">
               <b class="photo__name">Надежда</b> <span class="photo__counter">(45 часов назад)</span>
@@ -113,10 +122,11 @@
           </article>
         </div>
       </section>
-      <div class="caption caption--bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
+      <div class="caption container">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
       <section class="gallery">
-        <div class="gallery__wrapper">
+        <div class="gallery__wrapper container">
           <div class="gallery__photo">
+            <img class="gallery__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Road">
           </div>
           <div class="gallery__footer">
             <div class="gallery__tools tool">
@@ -155,6 +165,7 @@
     </main>
     <footer class="footer footer--photo">
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу">
+        <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="81" height="18" alt="Логотип">
       </a>
       <ul class="footer__social social__list">
         <li class="social__item">
