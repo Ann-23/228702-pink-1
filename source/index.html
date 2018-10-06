@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pink-main</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -36,8 +37,8 @@
     </header>
     <main>
       <h1 class="visually-hidden">Pink сделает вашу жизнь ярче</h1>
-      <section class="app-download container">
-        <div class="download">
+      <section class="app-download">
+        <div class="download container">
           <div class="download__wrapper">
             <h2 class="download__title">Взгляните на жизнь иначе!</h2>
             <a class="download__button button" href="https://www.apple.com/ru/itunes/working-itunes/market/" target="_blank">Скачать приложение</a>
@@ -63,7 +64,7 @@
         <div class="motivation__wrapper">
           <div class="motivation__titles container">
             <h3 class="motivation__text">Устали от серости мегаполиса?</h3>
-            <h3 class="motivation__text">Нам есть, что вам предложить!</h3>
+            <h3 class="motivation__text motivation__text--second-header">Нам есть, что вам предложить!</h3>
           </div>
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="motivation__list">
@@ -84,6 +85,17 @@
               </ul>
             </div>
           </div>
+          <div class="motivation__footer">
+            <div class="motivation__footer-wrapper container">
+              <span class="motivation__number">24</span>
+              <h3 class="motivation__text motivation__text--footer">Эффект на&nbsp;24 часа!</h3>
+              <p class="motivation__description">Британские ученые провели исследования
+              и доказали, что положительный эффект oт использования приложения длится
+              целые сутки!
+              </p>
+              <a class="motivation__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -93,6 +105,7 @@
             <blockquote class="review__item">
               <p class="review__title">Николай Петров</p>
               <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="review__remark">25 лет, водитель трамвая</p>
             </blockquote>
           </div>
           <div class="reviews__list review">
@@ -116,48 +129,61 @@
       </section>
       <section class="rate">
         <div class="rate__wrapper">
-          <div class="rate__table-container">
+          <div class="rate__table-container container">
             <table class="rate__table">
               <tr>
-                <th class="rate__header">
-                  <p class="rate-header__title"></p>
-                  <p class="rate-header__price"></p>
+                <th class="rate__header rate__header--empty">
                 </th>
                 <th class="rate__header">
+                  <p class="rate-header__title">База</p>
+                  <p class="rate-header__price">1,99 usd</p>
+                </th>
+                <th class="rate__header rate-header--icon">
                   <span class="rate-header__tape-text">Хит</span>
                   <p class="rate-header__title">Стандарт</p>
                   <p class="rate-header__price">3,99 usd</p>
                 </th>
                 <th class="rate__header">
-                  <p class="rate-header__title"></p>
-                  <p class="rate-header__price"></p>
+                  <p class="rate-header__title">Анлим</p>
+                  <p class="rate-header__price">9,99 usd</p>
                 </th>
               </tr>
               <tr>
                 <td class="rate__item">
+                  Розовый фильтр
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
                 <td class="rate__item">
                   <span class="rate__cell-text rate__cell-text--hidden">Розовый фильтр</span>
                 </td>
                 <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
               </tr>
               <tr>
+                <td class="rate__item">Смайлики</td>
                 <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
-                <td class="rate__item">
+                <td class="rate__item rate__item--icon-yes">
                   <span class="rate__cell-text rate__cell-text--hidden">Смайлики</span>
                 </td>
-                <td class="rate__item">
+                <td class="rate__item rate__item--icon-yes">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
               </tr>
               <tr>
-                <td class="rate__item">
+                <td class="rate__item">Комментарии</td>
+                <td class="rate__item rate__item--icon-no">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
-                <td class="rate__item">
+                <td class="rate__item rate__item--icon-no">
                   <span class="rate__cell-text rate__cell-text--hidden">Комментарии</span>
                 </td>
-                <td class="rate__item">
+                <td class="rate__item rate__item--icon-yes">
+                  <span class="rate__cell-text rate__cell-text--hidden"></span>
                 </td>
               </tr>
             </table>

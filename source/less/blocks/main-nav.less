@@ -24,6 +24,12 @@
   background-color: @main-color;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__elements {
+    min-height: 110px;
+  }
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;

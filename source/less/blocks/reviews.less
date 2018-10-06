@@ -10,6 +10,28 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    padding-top: 90px;
+    padding-bottom: 15px;
+  }
+}
+
+.reviews__list {
+  padding-bottom: 22px;
+}
+
+.reviews__list:nth-child(2),
+.reviews__list:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
+    padding-bottom: 9px;
+  }
+}
+
 .reviews__toggles {
   margin: 0;
   text-align: center;

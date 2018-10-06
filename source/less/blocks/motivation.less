@@ -2,6 +2,12 @@
   padding-bottom: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .motivation__titles {
+    padding-top: 49px;
+  }
+}
+
 .motivation__text {
   margin: 0;
   padding-top: 40px;
@@ -12,6 +18,43 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .motivation__text {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.motivation__text--footer {
+  padding-right: 90px;
+  padding-bottom: 11px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+  text-align: left;
+}
+
+.motivation__description {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.motivation__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: @sec-color;
+}
+
+.motivation__text--second-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .motivation__list {
   padding-top: 78px;
   padding-bottom: 290px;
@@ -19,4 +62,67 @@
   background-repeat: no-repeat;
   background-position: 50% 109%;
   background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__list {
+    padding-top: 88px;
+    padding-bottom: 12px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 5% bottom;
+  }
+}
+
+.motivation__footer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__footer {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__footer-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    padding-top: 96px;
+    padding-bottom: 35px;
+    padding-left: 309px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left 78%;
+  }
+}
+
+.motivation__number {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__number {
+    position: absolute;
+    top: 153px;
+    left: 63px;
+    display: block;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    color: @sec-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -43px;
+      right: -47px;
+      width: 175px;
+      height: 175px;
+      border: 12px solid @sec-color;
+      border-radius: 50%;
+    }
+  }
 }

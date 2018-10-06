@@ -3,3 +3,13 @@
   padding-bottom: 16px;
   background-color: @main-color;
 }
+
+@media (min-width: @tablet-width) {
+  .app-download {
+    min-height: 618px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: ~"calc(50% - 6px)" 115px, center 100%;
+    background-repeat: no-repeat;
+    background-color: @main-color;
+  }
+}

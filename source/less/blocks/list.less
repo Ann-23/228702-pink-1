@@ -4,6 +4,13 @@
   list-style: none;
 }
 
+@media (min-width: @tablet-width) {
+  .list {
+    position: relative;
+    padding-left: 309px;
+  }
+}
+
 .list__title {
   margin: 0;
   padding-bottom: 12px;
@@ -19,4 +26,20 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .list__description {
+    padding-bottom: 10px;
+    text-align: inherit;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 18px;
+  }
 }
