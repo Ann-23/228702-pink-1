@@ -11,6 +11,15 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: @blue-dark-30;
+  }
+}
+
 .page-header--bg-bottom {
   min-height: 712px;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
@@ -22,5 +31,11 @@
   .page-header--bg-bottom {
     min-height: 365px;
     background-image: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header--bg-bottom {
+    min-height: 110px;
   }
 }

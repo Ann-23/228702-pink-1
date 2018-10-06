@@ -6,8 +6,19 @@
 
 @media (min-width: @tablet-width) {
   .list {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-left: 309px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
   }
 }
 
@@ -18,6 +29,14 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .list__title {
+    padding-bottom: 23px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .list__description {
@@ -35,11 +54,28 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .list__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .list__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
   }
 }
