@@ -3,3 +3,63 @@
   padding-bottom: 36px;
   background-color: @light-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    flex-direction: row;
+    padding-top: 38px;
+    padding-bottom: 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__wrapper {
+    padding-top: 39px;
+    padding-bottom: 56px;
+    background-color: @light-grey;
+  }
+}
+
+.gallery__photo {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__photo {
+    width: 300px;
+    min-height: 400px;
+    margin-right: 45px;
+    padding: 0;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__photo {
+    width: 300px;
+    min-height: 400px;
+    margin-left: 80px;
+    margin-right: 90px;
+    padding: 0;
+    padding-top: 19px;
+  }
+}

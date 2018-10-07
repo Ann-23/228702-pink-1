@@ -1,7 +1,18 @@
 .caption {
-  margin: 0;
+  box-sizing: border-box;
   padding-top: 46px;
   padding-bottom: 48px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .caption {
+    padding: 93px 90px 75px;
+    font-size: 18px;
+  }
+
+  .caption--bottom {
+    padding: 46px 25px 69px;
+  }
 }

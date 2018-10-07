@@ -1,5 +1,39 @@
 .photo {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 300px;
+  }
+}
+
+.photo--header {
+  width: 100%;
+}
+
+.photo__link {
+  display: block;
+  height: 180px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__link {
+    height: 300px;
+  }
+}
+
+.photo__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__img--header {
+    min-height: 510px;
+  }
 }
 
 .photo__title {
@@ -13,6 +47,12 @@
   color: @white;
   text-transform: uppercase;
   background-color: @sec-color;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title {
+    top: 57px;
+  }
 }
 
 .photo__comment {
