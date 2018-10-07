@@ -6,8 +6,56 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 280px;
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .tool__list {
+    flex-direction: column;
+    width: 80px;
+  }
+}
+
+.tool__item {
+  width: 70px;
+  height: 70px;
+  background-color: @sec-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 540px;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-medium;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tool__item {
+    &::after {
+      top: 65px;
+      left: 0;
+      width: 315px;
+    }
+  }
+
+  .tool__item:nth-child(2) {
+    &::after {
+      top: 142px;
+      left: 0;
+    }
+  }
+
+  .tool__item:nth-child(3) {
+    &::after {
+      top: 215px;
+      left: 0;
+    }
+  }
 }

@@ -2,11 +2,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .photo {
     width: 300px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    margin-bottom: 51px;
   }
 }
 
@@ -17,11 +25,18 @@
 .photo__link {
   display: block;
   height: 180px;
+  background-color: @sec-color;
 }
 
 @media (min-width: @tablet-width) {
   .photo__link {
     height: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__link {
+    height: 400px;
   }
 }
 
