@@ -3,6 +3,40 @@
   padding-bottom: 20px;
 }
 
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 320px;
+  height: 70px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 91%;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map::before {
+    top: -1px;
+    width: 660px;
+    height: 100px;
+    background-size: 100% 70%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map::before {
+    top: -10px;
+    width: 960px;
+    height: 180px;
+    background-size: 101% 66%;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     padding-top: 45px;
