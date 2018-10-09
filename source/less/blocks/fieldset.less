@@ -53,3 +53,128 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media (min-width: @tablet-width) {
+  .fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 57px;
+    border: 2px solid @light-grey;
+  }
+
+  .fieldset--contacts {
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  .fieldset--radio {
+    padding-top: 56px;
+    padding-bottom: 14px;
+  }
+
+  .fieldset--checkbox {
+    padding-top: 57px;
+    padding-bottom: 0;
+  }
+
+  .fieldset__legend {
+    padding-bottom: 0;
+  }
+
+  .fieldset__legend--contacts {
+    position: absolute;
+    top: -10px;
+    left: 30%;
+    display: inherit;
+    padding-left: 24px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--radio {
+    position: absolute;
+    top: -10px;
+    left: 21%;
+    padding-left: 21px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--checkbox {
+    position: absolute;
+    top: -10px;
+    left: 16%;
+    padding-left: 25px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--textarea {
+    position: absolute;
+    top: -10px;
+    left: 31%;
+    padding-left: 25px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset--radio {
+    max-width: 431px;
+    padding-top: 57px;
+    padding-bottom: 12px;
+  }
+
+  .fieldset--checkbox {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    max-height: 173px;
+  }
+
+  .fieldset--contacts {
+    display: flex;
+    flex-direction: row;
+    padding-top: 43px;
+    padding-bottom: 14px;
+  }
+
+  .fieldset__legend--radio {
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    display: inherit;
+    padding-left: 27px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--contacts {
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    display: inherit;
+    padding-left: 31px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--checkbox {
+    position: absolute;
+    top: -10px;
+    left: 26%;
+    display: inherit;
+    padding-left: 39px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--textarea {
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    padding-left: 38px;
+    padding-right: 40px;
+    background-color: @white;
+  }
+}
