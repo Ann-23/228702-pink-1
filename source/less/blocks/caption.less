@@ -1,7 +1,55 @@
 .caption {
-  margin: 0;
-  padding-top: 46px;
-  padding-bottom: 48px;
+  box-sizing: border-box;
+  padding: 46px 35px 48px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 30px;
   text-align: center;
+}
+
+.caption__appeal {
+  display: none;
+}
+
+.caption--bottom {
+  padding: 46px 34px 48px;
+}
+
+@media (min-width: @tablet-width) {
+  .caption {
+    padding: 93px 90px 75px;
+    font-size: 18px;
+  }
+
+  .caption--photo {
+    padding-top: 93px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+  }
+
+  .caption__appeal {
+    display: inline-block;
+  }
+
+  .caption--bottom {
+    padding: 46px 25px 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .caption {
+    padding: 93px 190px 75px;
+  }
+
+  .caption--photo {
+    padding-top: 93px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.caption__item {
+  margin: 0;
 }

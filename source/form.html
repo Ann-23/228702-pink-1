@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pink-form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -36,9 +37,9 @@
     </header>
     <main>
       <section class="top">
-        <h1 class="top__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="top__title top__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
-      <div class="caption container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+      <div class="caption caption--photo container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="caption__appeal">Пожалуйста, заполните форму ниже:</span></div>
       <section class="data">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -87,6 +88,7 @@
           </div>
           <div class="form__contacts container">
             <div class="fieldset fieldset--contacts">
+              <p class="fieldset__legend fieldset__legend--contacts">Контактная информация</p>
               <label class="input input--contacts">
                 <span class="input__label input__label--contacts">Номер телефона</span>
                 <input class="input__control input__control--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -123,12 +125,12 @@
               </label>
             </div>
           </div>
-          <button class="form__button button button--green button-sent" type="submit">Отправить форму</button>
+          <div class="form__footer container">
+            <button class="form__button button button--green button-sent" type="submit">Отправить форму</button>
+            <p class="form__text"><span class="form__star">*</span>&mdash; обязательные <span class="form__text-insert">для заполнения</span> поля</p>
+          </div>
         </form>
       </section>
-      <div class="caption caption--bottom container">
-        <span class="form__star">*</span>&mdash; обязательные <span class="form__text-insert">для заполнения</span> поля
-      </div>
     </main>
     <footer class="footer footer--form container">
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу">

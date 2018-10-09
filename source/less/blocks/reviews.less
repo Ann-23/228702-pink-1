@@ -10,7 +10,49 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    padding-top: 90px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    padding-top: 186px;
+  }
+}
+
+.reviews__list {
+  padding-bottom: 22px;
+}
+
+.reviews__list:nth-child(2),
+.reviews__list:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
+    padding-bottom: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__list {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 12px;
+  }
+}
+
 .reviews__toggles {
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
 }

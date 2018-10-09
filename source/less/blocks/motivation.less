@@ -2,6 +2,18 @@
   padding-bottom: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .motivation__titles {
+    padding-top: 49px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__titles {
+    padding-top: 70px;
+  }
+}
+
 .motivation__text {
   margin: 0;
   padding-top: 40px;
@@ -12,11 +24,232 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .motivation__text {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.motivation__text--footer {
+  padding-right: 90px;
+  padding-bottom: 11px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+  text-align: left;
+}
+
+.motivation__description {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__description {
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.motivation__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: @sec-color;
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.motivation__text--second-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__text--second-header {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .motivation__list {
+  position: relative;
   padding-top: 78px;
   padding-bottom: 290px;
+  background-color: @light-grey;
+}
+
+.motivation__list::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.motivation__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 109%;
-  background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__list::before {
+    top: -1px;
+    width: 660px;
+    height: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__list::before {
+    top: -1px;
+    width: 960px;
+    height: 124px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__list {
+    padding-top: 88px;
+    padding-bottom: 12px;
+  }
+
+  .motivation__list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 5% bottom;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__list {
+    padding-top: 401px;
+    padding-bottom: 40px;
+  }
+
+  .motivation__list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 3% 10%, 51% 10%, 97% 10%;
+  }
+}
+
+.motivation__footer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__footer {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__footer {
+    padding-top: 20px;
+    padding-bottom: 78px;
+    background-color: @light-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__footer-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    padding-top: 96px;
+    padding-bottom: 35px;
+    padding-left: 309px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left 102%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__footer-wrapper {
+    width: 527px;
+    padding-top: 96px;
+    padding-bottom: 35px;
+    padding-left: 366px;
+  }
+}
+
+.motivation__number {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__number {
+    position: absolute;
+    top: 153px;
+    left: 63px;
+    display: block;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    color: @sec-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -43px;
+      right: -47px;
+      width: 175px;
+      height: 175px;
+      border: 12px solid @sec-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__numder {
+    display: block;
+    top: 127px;
+  }
 }
