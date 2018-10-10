@@ -3,10 +3,9 @@
   background-color: @light-grey;
 }
 
-@media (min-width: @tablet-width) {
-  .rate {
-    min-height: 337px;
-  }
+.rate__table-container {
+  position: relative;
+  min-height: 312px;
 }
 
 .rate__wrapper {
@@ -14,37 +13,10 @@
   overflow: hidden;
 }
 
-@media (min-width: @desktop-width) {
-  .rate__wrapper {
-    padding-top: 149px;
-    padding-bottom: 98px;
-  }
-}
-
-.rate__table-container {
-  position: relative;
-  min-height: 312px;
-}
-
-@media (min-width: @tablet-width) {
-  .rate__table-container {
-    position: inherit;
-    min-height: 220px;
-    min-width: 620px;
-    margin: 0 auto;
-  }
-}
-
 .rate__table {
   position: absolute;
   right: -258px;
   border-collapse: collapse;
-}
-
-@media (min-width: @tablet-width) {
-  .rate__table {
-    position: inherit;
-  }
 }
 
 .rate__header {
@@ -59,25 +31,6 @@
   border-right: 2px solid @grey-strong;
 }
 
-@media (min-width: @tablet-width) {
-  .rate__header {
-    min-height: 81px;
-    min-width: 155px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-left: 2px solid @blue-dark;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .rate__header {
-    min-height: 98px;
-    min-width: 235px;
-    padding-top: 13px;
-    padding-bottom: 20px;
-  }
-}
-
 .rate-header--icon {
   position: relative;
 
@@ -90,24 +43,6 @@
     height: 73px;
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .rate-header--icon::after {
-    width: 61px;
-    height: 61px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .rate__header:nth-child(2),
-  .rate__header:nth-child(3) {
-    border-right: 2px solid @grey-strong;
-  }
-
-  .rate__header:nth-child(4) {
-    border-right: 2px solid @main-color;
   }
 }
 
@@ -150,27 +85,6 @@
   border: 2px solid @grey-strong;
 }
 
-@media (min-width: @tablet-width) {
-  .rate__item {
-    min-height: 48px;
-    min-width: 155px;
-    padding: 0;
-    padding-top: 7px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    text-transform: inherit;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .rate__item {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 20px;
-    font-size: 18px;
-  }
-}
-
 .rate__icon-yes {
   position: absolute;
   top: 16px;
@@ -196,18 +110,6 @@
   color: @white;
 }
 
-@media (min-width: @tablet-width) {
-  .rate-header__title {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .rate-header__title {
-    font-size: 18px;
-  }
-}
-
 .rate-header__price {
   margin: 0;
   padding-left: 10px;
@@ -219,30 +121,99 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width) {
-  .rate-header__price {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .rate-header__price {
-    font-size: 24px;
-  }
-}
-
 .rate__toggles {
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
+  .rate {
+    min-height: 337px;
+  }
+
+  .rate__table-container {
+    position: inherit;
+    min-height: 220px;
+    min-width: 620px;
+    margin: 0 auto;
+  }
+
+  .rate__table {
+    position: inherit;
+  }
+
+  .rate__header {
+    min-height: 81px;
+    min-width: 155px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .rate-header--icon::after {
+    width: 61px;
+    height: 61px;
+  }
+
+  .rate__header:nth-child(2),
+  .rate__header:nth-child(3) {
+    border-right: 2px solid @grey-strong;
+  }
+
+  .rate__header:nth-child(4) {
+    border-right: 2px solid @main-color;
+  }
+
+  .rate__item {
+    min-height: 48px;
+    min-width: 155px;
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    text-transform: inherit;
+  }
+
+  .rate-header__title {
+    font-size: 16px;
+  }
+
+  .rate-header__price {
+    font-size: 18px;
+  }
+
   .rate__toggles {
+    display: none;
+  }
+
+  .rate__cell-text--hidden {
     display: none;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .rate__cell-text--hidden {
-    display: none;
+@media (min-width: @desktop-width) {
+  .rate__wrapper {
+    padding-top: 149px;
+    padding-bottom: 98px;
+  }
+
+  .rate__header {
+    min-height: 98px;
+    min-width: 235px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+  }
+
+  .rate__item {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .rate-header__title {
+    font-size: 18px;
+  }
+
+  .rate-header__price {
+    font-size: 24px;
   }
 }

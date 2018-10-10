@@ -26,12 +26,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .button {
-    width: 300px;
-  }
-}
-
 .button--green {
   padding: 22px;
   text-transform: uppercase;
@@ -67,23 +61,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .button--post {
-    width: 260px;
-  }
-
-  .button--green {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .button--post {
-    width: 185px;
-    margin: 0;
-  }
-}
-
 .button--cancel {
   color: @blue-dark-10;
   border-color: @blue-dark-10;
@@ -103,12 +80,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .button {
+    width: 300px;
+  }
+
+  .button--post {
+    width: 260px;
+  }
+
+  .button--green {
+    margin: 0;
+  }
+
   .button--cancel {
     width: 260px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .button--post {
+    width: 185px;
+    margin: 0;
+  }
+
   .button--cancel {
     width: 185px;
     margin: 0;
