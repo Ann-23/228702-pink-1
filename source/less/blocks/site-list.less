@@ -33,8 +33,12 @@
 }
 
 .site-list__link--active {
-  border-top: 0;
+  border-top: none;
   box-shadow: inset 0 1px 3px 0 @black, 0 2px 0 0 @blue-light;
+}
+
+.site-list__link--not-active {
+  border-bottom: none;
 }
 
 @media (min-width: @desktop-width) {
