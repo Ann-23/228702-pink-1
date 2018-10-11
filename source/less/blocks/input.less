@@ -52,6 +52,7 @@
 
   .input__control {
     flex-grow: 1;
+    position: relative;
     margin-top: 0;
     margin-bottom: 55px;
   }
@@ -67,6 +68,7 @@
   }
 
   .input--contacts {
+    position: relative;
     flex-direction: column-reverse;
     margin-bottom: 29px;
   }
@@ -80,6 +82,34 @@
     margin-left: 77px;
     margin-right: 0;
   }
+
+  .input--contacts::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    right: 57px;
+    width: 60px;
+    height: 56px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: @light-grey;
+  }
+
+  .input--contacts:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    right: 57px;
+    width: 60px;
+    height: 56px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: @light-grey;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -87,6 +117,16 @@
     margin-left: 59px;
     margin-right: 13px;
     margin-bottom: 0;
+  }
+
+  .input--contacts::before {
+    top: 2px;
+    right: 0;
+  }
+
+  .input--contacts:nth-child(3)::before {
+    top: 2px;
+    right: 0;
   }
 
   .input__label--contacts {
