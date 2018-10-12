@@ -1,9 +1,10 @@
 .social__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  min-width: 200px;
+  justify-content: space-around;
+  width: 190px;
   margin: 0;
+  margin-right: 19px;
   padding: 0;
   list-style: none;
 }
@@ -52,5 +53,11 @@
 
   &:active {
     opacity: 0.1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin-right: 0;
   }
 }

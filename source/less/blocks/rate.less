@@ -54,7 +54,7 @@
     left: -2px;
     width: 74px;
     height: 73px;
-    background-image: url("../img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
   }
 }
@@ -152,6 +152,7 @@
 
   .rate__table {
     position: inherit;
+    right: 0;
   }
 
   .rate__header {
@@ -161,9 +162,15 @@
     padding-bottom: 8px;
   }
 
+  .rate-header__tape-text {
+    top: 4px;
+    left: 5px;
+  }
+
   .rate-header--icon::after {
     width: 61px;
     height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
   }
 
   .rate__header:nth-child(2),
@@ -200,12 +207,30 @@
   .rate__cell-text--hidden {
     display: none;
   }
+
+  .rate__wrapper {
+    padding-top: 99px;
+  }
+
+  .rate__wrapper::before {
+    top: -7px;
+    height: 69px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .rate {
+    padding-bottom: 0;
+  }
+
   .rate__wrapper {
-    padding-top: 149px;
+    padding-top: 146px;
     padding-bottom: 98px;
+  }
+
+  .rate__wrapper::before {
+    top: -7px;
+    height: 83px;
   }
 
   .rate__header {
@@ -215,8 +240,21 @@
     padding-bottom: 20px;
   }
 
+  .rate-header__tape-text {
+    top: 10px;
+    left: 10px;
+  }
+
+  .rate-header--icon::after {
+    top: -2px;
+    left: -2px;
+    width: 76px;
+    height: 76px;
+    background-image: url("../img/bg-hit.svg");
+  }
+
   .rate__item {
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 14px;
     padding-left: 20px;
     font-size: 18px;
