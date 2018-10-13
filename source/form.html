@@ -12,7 +12,11 @@
         <nav class="main-nav main-nav--opened">
           <div class="main-nav__elements">
             <a class="page-header__link logo" href="index.html" aria-label="Логотип">
-              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
@@ -134,7 +138,11 @@
     </main>
     <footer class="footer footer--form container">
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу">
-        <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="81" height="18" alt="Логотип">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+          <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="81" height="18" alt="Логотип">
+        </picture>
       </a>
       <ul class="footer__social social__list">
         <li class="social__item">
