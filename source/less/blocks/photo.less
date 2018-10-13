@@ -147,10 +147,38 @@
 
 @media (min-width: @desktop-width) {
   .photo {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
+  }
+
+  .photo:nth-child(4),
+  .photo:nth-child(5),
+  .photo:nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  .photo__img--header {
+    min-height: 506px;
+  }
+
+  .photo__title {
+    top: 54px;
+    right: 12px;
   }
 
   .photo__link {
     height: 400px;
+  }
+
+  .photo__comment {
+    padding: 25px 22px 28px 28px;
+  }
+
+  .photo__comment--header {
+    min-height: 95px;
+    padding: 24px 22px 9px 30px;
+  }
+
+  .photo__text {
+    padding-bottom: 0;
   }
 }
