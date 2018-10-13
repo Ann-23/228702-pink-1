@@ -53,6 +53,18 @@
     padding-bottom: 52px;
     padding-left: 120px;
   }
+
+  .checkbox__label {
+    &::before {
+      top: -7px;
+      left: -60px;
+    }
+  }
+
+  .checkbox__control:checked + .checkbox__label::after {
+    top: 4px;
+    left: -51px;
+  }
 }
 
 @media (min-width: @desktop-width) {

@@ -51,11 +51,29 @@
     padding-bottom: 45px;
     padding-left: 119px;
   }
+
+  .radio__label {
+    &::before {
+      top: -10px;
+      left: -62px;
+    }
+  }
+
+  .radio__control:checked + .radio__label::after {
+    top: 4px;
+    left: -47px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .radio {
-    padding-bottom: 46px;
+    padding-bottom: 44px;
     padding-left: 132px;
+  }
+
+  .radio__label {
+    &::before {
+      left: -61px;
+    }
   }
 }
