@@ -3,32 +3,6 @@
   margin: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .download__title {
-    display: block;
-    margin: 0;
-    padding-bottom: 31px;
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 40px;
-    font-weight: 100;
-    font-style: normal;
-    line-height: 50px;
-    color: #ffffff;
-    text-align: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .download__title {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
 .download__remark {
   margin: 0;
   padding-top: 10px;
@@ -40,32 +14,58 @@
   text-align: center;
 }
 
+.download__list {
+  margin: 0;
+  padding: 19px;
+  padding-top: 34px;
+  padding-bottom: 9px;
+}
+
 @media (min-width: @tablet-width) {
+  .download__title {
+    display: block;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+
   .download__remark {
     font-size: 18px;
   }
-}
 
-.download__list {
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 12px;
-}
-
-@media (min-width: @tablet-width) {
   .download__wrapper {
     display: flex;
     flex-direction: column;
     width: 300px;
-    padding-top: 89px;
+    padding-top: 64px;
     padding-bottom: 16px;
+  }
+
+  .download__list {
+    padding: 30px;
+    padding-top: 47px;
+    padding-bottom: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .download__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .download__wrapper {
-    padding-top: 170px;
+    padding-top: 192px;
     padding-bottom: 30px;
   }
 }

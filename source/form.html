@@ -9,10 +9,10 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <div class="main-nav__elements">
             <a class="page-header__link logo" href="index.html" aria-label="Логотип">
-              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип">
+              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
@@ -23,7 +23,7 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+              <a class="site-list__link site-list__link--not-active" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Конкурс</a>
@@ -39,7 +39,7 @@
       <section class="top">
         <h1 class="top__title top__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
-      <div class="caption caption--photo container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="caption__appeal">Пожалуйста, заполните форму ниже:</span></div>
+      <div class="caption caption--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="caption__appeal">Пожалуйста, заполните форму ниже:</span></div>
       <section class="data">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -69,7 +69,7 @@
                 <span class="checkbox__label">Обгорел на пляже</span>
               </label>
               <label class="checkbox">
-                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="chuck" checked>
+                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="chuck">
                 <span class="checkbox__label">Видел Чака Норриса</span>
               </label>
               <label class="checkbox">

@@ -19,7 +19,7 @@
 
     position: absolute;
     top: -6px;
-    left: -56px;
+    left: -70px;
 
     width: 35px;
     height: 35px;
@@ -41,10 +41,10 @@
   content: "";
   position: absolute;
   top: 5px;
-  left: -47px;
+  left: -61px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/check.png");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
 }
 
@@ -52,6 +52,18 @@
   .checkbox {
     padding-bottom: 52px;
     padding-left: 120px;
+  }
+
+  .checkbox__label {
+    &::before {
+      top: -7px;
+      left: -60px;
+    }
+  }
+
+  .checkbox__control:checked + .checkbox__label::after {
+    top: 4px;
+    left: -51px;
   }
 }
 

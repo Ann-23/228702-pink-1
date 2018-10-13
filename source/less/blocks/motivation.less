@@ -2,41 +2,14 @@
   padding-bottom: 30px;
 }
 
-@media (min-width: @tablet-width) {
-  .motivation__titles {
-    padding-top: 49px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .motivation__titles {
-    padding-top: 70px;
-  }
-}
-
 .motivation__text {
   margin: 0;
-  padding-top: 40px;
+  padding-top: 38px;
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
   color: @main-color;
   text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .motivation__text {
-    padding-top: 0;
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .motivation__text {
-    font-size: 50px;
-    line-height: 60px;
-  }
 }
 
 .motivation__text--footer {
@@ -56,14 +29,6 @@
   line-height: 24px;
 }
 
-@media (min-width: @desktop-width) {
-  .motivation__description {
-    padding-bottom: 30px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 .motivation__link {
   font-size: 14px;
   font-weight: 400;
@@ -71,29 +36,15 @@
   color: @sec-color;
 }
 
-@media (min-width: @desktop-width) {
-  .motivation__link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-}
-
 .motivation__text--second-header {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-@media (min-width: @desktop-width) {
-  .motivation__text--second-header {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .motivation__list {
   position: relative;
-  padding-top: 78px;
+  padding-top: 79px;
   padding-bottom: 290px;
   background-color: @light-grey;
 }
@@ -101,10 +52,10 @@
 .motivation__list::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -28px;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 57px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,26 +70,40 @@
   height: 100%;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 50% 109%;
+  background-position: 51% 109%;
+}
+
+.motivation__footer {
+  display: none;
+}
+
+.motivation__number {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
+  .motivation__titles {
+    padding-top: 49px;
+  }
+
+  .motivation__text {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .motivation__text--footer {
+    padding-bottom: 8px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
   .motivation__list::before {
-    top: -1px;
-    width: 660px;
+    top: -31px;
+    width: 100%;
     height: 100px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .motivation__list::before {
-    top: -1px;
-    width: 960px;
-    height: 124px;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .motivation__list {
     padding-top: 88px;
     padding-bottom: 12px;
@@ -153,13 +118,99 @@
     height: 100%;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 5% bottom;
+    background-position: 6% bottom;
+  }
+
+  .motivation__footer {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .motivation__footer-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    padding-top: 74px;
+    padding-bottom: 35px;
+    padding-left: 314px;
+  }
+
+  .motivation__number {
+    position: absolute;
+    top: 142px;
+    left: 69px;
+    display: block;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    color: @sec-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -48px;
+      right: -47px;
+      width: 175px;
+      height: 175px;
+      border: 13px solid @sec-color;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -105px;
+      left: -64px;
+      width: 240px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .motivation__titles {
+    padding-top: 67px;
+  }
+
+  .motivation__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .motivation__text--footer {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .motivation__description {
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .motivation__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .motivation__text--second-header {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .motivation__list::before {
+    top: -4px;
+    width: 100%;
+    height: 137px;
+  }
+
   .motivation__list {
-    padding-top: 401px;
+    padding-top: 403px;
     padding-bottom: 40px;
   }
 
@@ -172,84 +223,48 @@
     height: 100%;
     background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 3% 10%, 51% 10%, 97% 10%;
+    background-position: 3% 12%, 51% 12%, 98% 12%;
   }
-}
 
-.motivation__footer {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .motivation__footer {
-    display: block;
-    padding-top: 20px;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .motivation__footer {
     padding-top: 20px;
     padding-bottom: 78px;
     background-color: @light-grey;
   }
-}
 
-@media (min-width: @tablet-width) {
   .motivation__footer-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 296px;
-    padding-top: 96px;
+    width: 526px;
+    padding-top: 66px;
     padding-bottom: 35px;
-    padding-left: 309px;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position: left 102%;
+    padding-left: 327px;
+    background-position: 2px 39%;
+    background-size: 110%;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .motivation__footer-wrapper {
-    width: 527px;
-    padding-top: 96px;
-    padding-bottom: 35px;
-    padding-left: 366px;
-  }
-}
-
-.motivation__number {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
   .motivation__number {
-    position: absolute;
-    top: 153px;
-    left: 63px;
     display: block;
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 96px;
-    color: @sec-color;
+    top: 117px;
+    left: 41px;
+    font-size: 120px;
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      top: -43px;
-      right: -47px;
-      width: 175px;
-      height: 175px;
-      border: 12px solid @sec-color;
-      border-radius: 50%;
+      top: -141px;
+      left: -80px;
+      width: 300px;
+      height: 348px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
-}
 
-@media (min-width: @desktop-width) {
-  .motivation__numder {
-    display: block;
-    top: 127px;
+  .motivation__number::after {
+    top: -72px;
+    right: -60px;
+    width: 220px;
+    height: 220px;
+    border: 17px solid @sec-color;
   }
 }

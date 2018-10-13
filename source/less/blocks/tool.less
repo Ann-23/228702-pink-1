@@ -6,30 +6,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 200px;
+  width: 212px;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
 
-@media (min-width: @tablet-width) {
-  .tool__list {
-    flex-direction: column;
-    width: 24px;
-    margin: 0;
-  }
-}
-
 .tool__item {
-  width: 44px;
+  width: 54px;
   height: 44px;
   background-color: @sec-color;
 
   &::after {
     content: "";
     position: absolute;
-    top: 545px;
+    top: 556px;
     left: 0;
     width: 320px;
     height: 1px;
@@ -38,13 +30,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .tool {
+    margin-top: -9px;
+  }
+
+  .tool__list {
+    flex-direction: column;
+    width: 29px;
+    margin: 0;
+  }
+
   .tool__item {
-    margin-top: 20px;
-    width: 24px;
-    height: 22px;
+    margin-top: 16px;
+    width: 28px;
+    height: 24px;
 
     &::after {
-      top: 65px;
+      top: 55px;
       left: 0;
       width: 276px;
     }
@@ -54,48 +56,56 @@
     margin-top: 51px;
 
     &::after {
-      top: 142px;
+      top: 128px;
       left: 0;
     }
   }
 
   .tool__item:nth-child(3) {
-    margin-top: 55px;
+    margin-top: 45px;
 
     &::after {
-      top: 215px;
+      top: 198px;
       left: 0;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .tool {
+    margin-top: 13px;
+  }
+
+  .tool__list {
+    width: 48px;
+  }
+
   .tool__item {
     margin-top: 0;
     width: 48px;
-    height: 44px;
+    height: 51px;
 
     &::after {
-      top: 65px;
+      top: 75px;
       left: 0;
       width: 410px;
     }
   }
 
   .tool__item:nth-child(2) {
-    margin-top: 38px;
+    margin-top: 24px;
 
     &::after {
-      top: 142px;
+      top: 148px;
       left: 0;
     }
   }
 
   .tool__item:nth-child(3) {
-    margin-top: 31px;
+    margin-top: 20px;
 
     &::after {
-      top: 215px;
+      top: 218px;
       left: 0;
     }
   }
