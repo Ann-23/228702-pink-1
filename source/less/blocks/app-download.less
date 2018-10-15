@@ -1,12 +1,22 @@
 .app-download {
-  padding-top: 27px;
+  padding-top: 420px;
   padding-bottom: 21px;
   background-color: @main-color;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: ~"calc(50% - 31px)" 108px, center -68px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-position: ~"calc(50% - 31px)" 108px, center -68px;
+    background-size: 258px 286px, 222% 462px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .app-download {
-    min-height: 570px;
+    padding-top: 26px;
+    padding-bottom: 85px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-position: ~"calc(50% + 1px)" 73px, center 100%;
     background-repeat: no-repeat;
