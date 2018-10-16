@@ -2,6 +2,7 @@ var pageHeader = document.querySelector(".page-header");
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
 
+pageHeader.classList.remove("page-header--nojs");
 navMain.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener("click", function() {
