@@ -1,4 +1,17 @@
 .page-header {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--closed {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--opened {
+  position: static;
   background-color: @main-color;
 }
 
@@ -9,7 +22,6 @@
     height: 50px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .page-header {

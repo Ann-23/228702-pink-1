@@ -11,6 +11,23 @@
   color: @main-color;
 }
 
+.copyright__link {
+  min-width: 35px;
+}
+
+.copyright__link-icon {
+  fill: @pink;
+
+  &:hover,
+  &:focus {
+    fill: @blue-dark;
+  }
+
+  &:active {
+    fill: @blue-dark-30;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .copyright {
     width: 153px;
