@@ -19,6 +19,18 @@
   background-size: 100% 45%;
 }
 
+.contacts__map::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 96px;
+  left: 139px;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
 .contacts__text {
   margin: 0;
   font-size: 24px;
@@ -72,6 +84,11 @@
     background-size: 100% 70%;
   }
 
+  .contacts__map::after {
+    top: 175px;
+    left: 310px;
+  }
+
   .contacts__wrapper {
     padding-top: 45px;
     padding-bottom: 1px;
@@ -103,6 +120,11 @@
     top: -1px;
     height: 180px;
     background-size: 101% 57%;
+  }
+
+  .contacts__map::after {
+    top: 284px;
+    left: 454px;
   }
 
   .contacts__wrapper {
