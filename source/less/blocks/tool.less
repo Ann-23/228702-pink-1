@@ -16,7 +16,6 @@
 .tool__item {
   width: 54px;
   height: 44px;
-  background-color: @sec-color;
 
   &::after {
     content: "";
@@ -26,6 +25,19 @@
     width: 320px;
     height: 1px;
     background-color: @grey-medium;
+  }
+}
+
+.tool__icon {
+  fill: @blue-dark-30;
+
+  &:hover,
+  &:focus {
+    fill: @blue-dark-50;
+  }
+
+  &:active {
+    fill: @sec-color;
   }
 }
 
