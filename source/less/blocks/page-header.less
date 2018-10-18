@@ -1,17 +1,14 @@
 .page-header {
-  position: absolute;
   width: 100%;
   background-color: @black-30;
 }
 
 .page-header--closed {
-  position: absolute;
   width: 100%;
   background-color: @black-30;
 }
 
 .page-header--opened {
-  position: static;
   background-color: @main-color;
 }
 
@@ -33,10 +30,13 @@
     position: absolute;
     width: 100%;
     top: 0;
-    background-color: @blue-dark-30;
   }
 
   .page-header__wrapper {
     background-color: @blue-30;
+  }
+
+  .page-header--closed {
+    background-color: transparent;
   }
 }
