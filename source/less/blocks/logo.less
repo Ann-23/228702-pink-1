@@ -1,3 +1,89 @@
 .logo {
   display: block;
 }
+
+.logo__item {
+  fill: @white;
+
+  &:hover {
+    fill: @sec-color;
+  }
+
+  &:active {
+    fill: @white-30;
+  }
+}
+
+.logo__item--tab {
+  display: none;
+}
+
+.logo__item--desktop {
+  display: none;
+}
+
+.logo__intro {
+  fill: @main-color;
+
+  &:hover {
+    fill: @sec-color;
+  }
+
+  &:active {
+    fill: @main-color;
+    opacity: 0.3;
+  }
+}
+
+.logo__intro--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__item--mobile {
+    display: none;
+  }
+
+  .logo__item--tab {
+    display: inline-block;
+  }
+
+  .logo__item--desktop {
+    display: none;
+  }
+
+  .logo__intro {
+    fill: @main-color;
+
+    &:hover {
+      fill: @sec-color;
+    }
+
+    &:active {
+      fill: @main-color;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__item--mobile {
+    display: none;
+  }
+
+  .logo__item--tab {
+    display: none;
+  }
+
+  .logo__item--desktop {
+    display: inline-block;
+  }
+
+  .logo__intro--mobile {
+    display: none;
+  }
+
+  .logo__intro--desktop {
+    display: inline-block;
+  }
+}
