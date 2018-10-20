@@ -46,6 +46,11 @@
   background-color: @sec-color;
 }
 
+.radio__control:focus + .radio__label::before {
+  outline: 1px solid @sec-color;
+  outline-offset: 2px;
+}
+
 @media (min-width: @tablet-width) {
   .radio {
     padding-bottom: 45px;

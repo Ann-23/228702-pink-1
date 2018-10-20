@@ -1,5 +1,7 @@
 .copyright {
-  width: 129px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
 }
 
 .copyright__text {
@@ -12,7 +14,7 @@
 }
 
 .copyright__link {
-  min-width: 35px;
+  display: inline-block;
 }
 
 .copyright__link-icon {
@@ -28,9 +30,15 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 130px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .copyright {
-    width: 153px;
+    width: 150px;
   }
 
   .copyright__text {
