@@ -1,16 +1,5 @@
 .pop-up {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: @white;
-  box-shadow:
-    0 14px 28px @black-25,
-    0 10px 10px @black-22;
+  display: none;
 }
 
 .pop-up--done {
@@ -58,10 +47,17 @@
   background-color: @light-grey;
 }
 
-.pop-up--not-show {
-  display: none;
-}
-
-.pop-up---show {
+.pop-up--show {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @white;
+  box-shadow:
+    0 14px 28px @black-25,
+    0 10px 10px @black-22;
 }
