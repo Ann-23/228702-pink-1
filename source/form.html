@@ -5,14 +5,23 @@
     <title>Pink-form</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__elements">
             <a class="page-header__link logo" href="index.html" aria-label="Логотип">
-              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
+              <svg class="logo__item logo__item--mobile" width="74.426px" height="22.859px">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="logo__item logo__item--tab" width="146.3px" height="40.375px">
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo__item logo__item--desktop" width="146.3px" height="40.375px">
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+              </svg>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
@@ -43,14 +52,14 @@
       <section class="data">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__full-name container">
+          <div class="form__full-name">
             <label class="input input--full-name">
               <span class="input__label">Фамилия:</span>
-              <input class="input__control" type="text" name="surname" placeholder="Укажите фамилию *">
+              <input class="input__control" type="text" name="surname" required placeholder="Укажите фамилию *">
             </label>
             <label class="input input--full-name">
               <span class="input__label">Имя:</span>
-              <input class="input__control input__control--full-name" type="text" name="name" placeholder="Введите ваше имя *">
+              <input class="input__control input__control--full-name" type="text" name="name" required placeholder="Введите ваше имя *">
             </label>
             <label class="input input--full-name">
               <span class="input__label">Отчество:</span>
@@ -58,7 +67,7 @@
             </label>
           </div>
           <div class="form__checkbox">
-            <div class="fieldset fieldset--checkbox container">
+            <div class="fieldset fieldset--checkbox">
               <p class="fieldset__legend fieldset__legend--checkbox">Ваши безбашенные достижения в путешествии</p>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="sharp" checked>
@@ -86,7 +95,7 @@
               </label>
             </div>
           </div>
-          <div class="form__contacts container">
+          <div class="form__contacts">
             <div class="fieldset fieldset--contacts">
               <p class="fieldset__legend fieldset__legend--contacts">Контактная информация</p>
               <label class="input input--contacts">
@@ -95,12 +104,12 @@
               </label>
               <label class="input input--contacts">
                 <span class="input__label input__label--contacts">Адрес почты</span>
-                <input class="input__control input__control--contacts" type="email" name="email" placeholder="Введите почту *">
+                <input class="input__control input__control--contacts" type="email" name="email" required placeholder="Введите почту *">
               </label>
             </div>
           </div>
           <div class="form__radio">
-            <div class="fieldset fieldset--radio container">
+            <div class="fieldset fieldset--radio">
               <p class="fieldset__legend fieldset__legend--radio">С каким приложением путешествовали?</p>
               <label class="radio">
                 <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="ios" checked>
@@ -116,7 +125,7 @@
               </label>
             </div>
           </div>
-          <div class="form__textarea container">
+          <div class="form__textarea">
             <div class="fieldset fieldset--textarea">
               <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
               <label class="textarea">
@@ -125,7 +134,7 @@
               </label>
             </div>
           </div>
-          <div class="form__footer container">
+          <div class="form__footer">
             <button class="form__button button button--green button-sent" type="submit">Отправить форму</button>
             <p class="form__text"><span class="form__star">*</span>&mdash; обязательные <span class="form__text-insert">для заполнения</span> поля</p>
           </div>
@@ -134,7 +143,11 @@
     </main>
     <footer class="footer footer--form container">
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу">
-        <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="81" height="18" alt="Логотип">
+        <svg class="logo__intro logo__intro--mobile" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use></svg>
+        <svg class="logo__intro logo__intro--desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
       </a>
       <ul class="footer__social social__list">
         <li class="social__item">
@@ -150,22 +163,25 @@
       <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg class="copyright__link-icon" width="30" height="35"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>
     <div class="pop-up pop-up--not-done">
-      <p class="pop-up__message pop-up__message--not-done">Что-то пошло не так!</p>
-      <p class="pop-up__text pop-up__text--not-done">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <div class="pop-up__button-wrapper pop-up__button-wrapper--not-done">
+      <p class="pop-up__message">Что-то пошло не так!</p>
+      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="pop-up__button-wrapper">
         <button class="pop-up__button button button--green button-ok" type="submit">Ок</button>
       </div>
     </div>
     <div class="pop-up pop-up--done">
       <p class="pop-up__message">Ваша заявка отправлена</p>
-      <p class="pop-up__text pop-up__text--big">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <div class="pop-up__button-wrapper pop-up__button-wrapper--big">
-        <button class="pop-up__button button button--green button--big button-close" type="submit">Закрыть окно</button>
+      <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      <div class="pop-up__button-wrapper pop-up__button-wrapper--done">
+        <button class="pop-up__button button button--green button-close" type="submit">Закрыть окно</button>
       </div>
     </div>
+    <script src="js/js.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

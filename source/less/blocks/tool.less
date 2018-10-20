@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 212px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -14,10 +15,6 @@
 }
 
 .tool__item {
-  width: 54px;
-  height: 44px;
-  background-color: @sec-color;
-
   &::after {
     content: "";
     position: absolute;
@@ -29,9 +26,67 @@
   }
 }
 
+.tool__item--cut {
+  width: 44px;
+  height: 44px;
+}
+
+.tool__item--fill {
+  width: 48px;
+  height: 43px;
+}
+
+.tool__item--light {
+  width: 32px;
+  height: 32px;
+}
+
+.tool__icon {
+  fill: @blue-dark-30;
+
+  &:hover,
+  &:focus {
+    fill: @blue-dark-50;
+  }
+
+  &:active {
+    fill: @sec-color;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .tool {
     margin-top: -9px;
+  }
+
+  .tool__item--cut {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tool__icon--cut {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tool__item--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .tool__icon--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .tool__item--light {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tool__icon--light {
+    width: 16px;
+    height: 16px;
   }
 
   .tool__list {
@@ -42,8 +97,6 @@
 
   .tool__item {
     margin-top: 16px;
-    width: 28px;
-    height: 24px;
 
     &::after {
       top: 55px;
@@ -62,7 +115,7 @@
   }
 
   .tool__item:nth-child(3) {
-    margin-top: 45px;
+    margin-top: 55px;
 
     &::after {
       top: 198px;
@@ -76,14 +129,42 @@
     margin-top: 13px;
   }
 
+  .tool__item--cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tool__icon--cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tool__item--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .tool__icon--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .tool__item--light {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tool__icon--light {
+    width: 32px;
+    height: 32px;
+  }
+
   .tool__list {
     width: 48px;
   }
 
   .tool__item {
     margin-top: 0;
-    width: 48px;
-    height: 51px;
 
     &::after {
       top: 75px;
@@ -93,7 +174,7 @@
   }
 
   .tool__item:nth-child(2) {
-    margin-top: 24px;
+    margin-top: 34px;
 
     &::after {
       top: 148px;
@@ -102,7 +183,7 @@
   }
 
   .tool__item:nth-child(3) {
-    margin-top: 20px;
+    margin-top: 35px;
 
     &::after {
       top: 218px;

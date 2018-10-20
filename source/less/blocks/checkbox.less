@@ -48,6 +48,11 @@
   background-repeat: no-repeat;
 }
 
+.checkbox__control:focus + .checkbox__label::before {
+  outline: 1px solid @sec-color;
+  outline-offset: 2px;
+}
+
 @media (min-width: @tablet-width) {
   .checkbox {
     padding-bottom: 52px;

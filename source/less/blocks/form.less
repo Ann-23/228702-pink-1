@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .form__full-name {
@@ -8,21 +10,29 @@
   flex-direction: column;
   padding-top: 34px;
   padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__checkbox {
   position: relative;
   padding-top: 118px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: @light-grey;
 }
 
 .form__radio {
   padding-top: 112px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: @light-grey;
 }
 
 .form__textarea {
   padding-top: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__contacts {
@@ -31,6 +41,8 @@
   flex-direction: column;
   padding-top: 29px;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__text {
@@ -70,9 +82,18 @@
   align-items: center;
   padding-top: 3px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .form__text {
     padding-right: 0;
   }
@@ -118,36 +139,53 @@
   .form {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .form__full-name {
-    max-width: 436px;
-    margin-left: auto;
-    margin-right: 0;
+    width: 436px;
     padding-top: 55px;
-    padding-right: 71px;
+    padding-right: 0;
     padding-left: 0;
   }
 
   .form__contacts {
     padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .form__radio {
-    margin-right: auto;
+    width: 433px;
     padding-top: 48px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .form__checkbox {
-    margin: auto;
     padding-top: 41px;
     padding-bottom: 5px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .form__textarea {
+    margin: 0;
     padding-top: 65px;
     padding-bottom: 48px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .form__footer {
+    width: 940px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .form__text {

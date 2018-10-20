@@ -30,6 +30,7 @@
   position: absolute;
   right: -258px;
   border-collapse: collapse;
+  background-color: @white;
 }
 
 .rate__header {
@@ -94,7 +95,6 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @main-color;
-  background-color: @white;
   border: 2px solid @grey-strong;
 }
 
@@ -216,6 +216,16 @@
     top: -7px;
     height: 69px;
   }
+
+  .rate__icon-yes {
+    top: 8px;
+    right: 43px;
+  }
+
+  .rate__icon-no {
+    top: 10px;
+    right: 62px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -266,5 +276,15 @@
 
   .rate-header__price {
     font-size: 24px;
+  }
+
+  .rate__icon-yes {
+    top: 16px;
+    right: 84px;
+  }
+
+  .rate__icon-no {
+    top: 16px;
+    right: 102px;
   }
 }
