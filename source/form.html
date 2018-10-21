@@ -8,6 +8,9 @@
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -55,11 +58,11 @@
           <div class="form__full-name">
             <label class="input input--full-name">
               <span class="input__label">Фамилия:</span>
-              <input class="input__control" type="text" name="surname" required placeholder="Укажите фамилию *">
+              <input class="input__control" type="text" name="surname" required="" placeholder="Укажите фамилию *">
             </label>
             <label class="input input--full-name">
               <span class="input__label">Имя:</span>
-              <input class="input__control input__control--full-name" type="text" name="name" required placeholder="Введите ваше имя *">
+              <input class="input__control input__control--full-name" type="text" name="name" required="" placeholder="Введите ваше имя *">
             </label>
             <label class="input input--full-name">
               <span class="input__label">Отчество:</span>
@@ -70,11 +73,11 @@
             <div class="fieldset fieldset--checkbox">
               <p class="fieldset__legend fieldset__legend--checkbox">Ваши безбашенные достижения в путешествии</p>
               <label class="checkbox">
-                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="sharp" checked>
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="sharp" checked="">
                 <span class="checkbox__label">Сделал селфи с акулой</span>
               </label>
               <label class="checkbox">
-                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="beach" checked>
+                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="beach" checked="">
                 <span class="checkbox__label">Обгорел на пляже</span>
               </label>
               <label class="checkbox">
@@ -86,7 +89,7 @@
                 <span class="checkbox__label">Накупил сувениров</span>
               </label>
               <label class="checkbox">
-                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="tower" checked>
+                <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="tower" checked="">
                 <span class="checkbox__label">Удержал башню</span>
               </label>
               <label class="checkbox">
@@ -104,7 +107,7 @@
               </label>
               <label class="input input--contacts">
                 <span class="input__label input__label--contacts">Адрес почты</span>
-                <input class="input__control input__control--contacts" type="email" name="email" required placeholder="Введите почту *">
+                <input class="input__control input__control--contacts" type="email" name="email" required="" placeholder="Введите почту *">
               </label>
             </div>
           </div>
@@ -112,7 +115,7 @@
             <div class="fieldset fieldset--radio">
               <p class="fieldset__legend fieldset__legend--radio">С каким приложением путешествовали?</p>
               <label class="radio">
-                <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="ios" checked>
+                <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="ios" checked="">
                 <span class="radio__label">Pink для iOS</span>
               </label>
               <label class="radio">
@@ -154,7 +157,7 @@
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"aria-label="Мы в Фейсбуке"></a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
