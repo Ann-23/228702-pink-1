@@ -54,6 +54,10 @@
   }
 }
 
+.tool__icon--cut {
+  fill: @sec-color;
+}
+
 @media (min-width: @tablet-width) {
   .tool {
     margin-top: -9px;
@@ -93,6 +97,12 @@
     flex-direction: column;
     width: 29px;
     margin: 0;
+  }
+
+  .tool__icon--cut,
+  .tool__icon--fill,
+  .tool__icon--light {
+    fill: @sec-color;
   }
 
   .tool__item {
