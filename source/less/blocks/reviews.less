@@ -69,16 +69,12 @@
   .reviews__row {
     display: block;
     position: absolute;
-    width: 51px;
-    height: 24px;
+    width: 22px;
+    height: 42px;
     padding: 0;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-  }
-
-  .reviews__row-left,
-  .reviews__row-right {
     fill: @blue-dark-30;
 
     &:hover,
@@ -91,13 +87,17 @@
     }
   }
 
+  .reviews__icon {
+    position: relative;
+  }
+
   .reviews__row--left {
-    top: 215px;
-    left: 0;
+    top: 213px;
+    left: 10px;
   }
 
   .reviews__row--right {
-    top: 215px;
-    right: 0;
+    top: 213px;
+    right: 10px;
   }
 }

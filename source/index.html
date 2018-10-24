@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Pink-main</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   </head>
   <body>
@@ -121,11 +124,15 @@
             </blockquote>
             <button class="reviews__row reviews__row--left" type="button">
               <span class="visually-hidden">Кнопка пролистывания влево</span>
-              <svg class="reviews__row-left" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
+              <span class="reviews__icon">
+                <svg class="reviews__row-left" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
+              </span>
             </button>
             <button class="reviews__row reviews__row--right" type="button">
               <span class="visually-hidden">Кнопка пролистывания вправо</span>
-              <svg class="reviews__row-right" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-right"></use></svg>
+              <span class="reviews__icon">
+                <svg class="reviews__row-right" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-right"></use></svg>
+              </span>
             </button>
           </div>
           <div class="reviews__list review">
@@ -193,7 +200,7 @@
                 <td class="rate__item">Смайлики</td>
                 <td class="rate__item">
                   <span class="rate__cell-icon">
-                    <svg class="rate__icon-no" width="27" height="26"><use xlink:href="img/sprite.svg#sprite-icon-no"></use></svg>
+                    <svg class="rate__icon-no" width="27" height="26"><use xlink:href="#sprite-icon-no"></use></svg>
                   </span>
                 </td>
                 <td class="rate__item">
