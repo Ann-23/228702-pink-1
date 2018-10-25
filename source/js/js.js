@@ -21,8 +21,8 @@ navToggle.addEventListener("click", function() {
 
 var popupNotDone = document.querySelector(".pop-up--not-done");
 var popupDone = document.querySelector(".pop-up--done");
-var linkOk = document.querySelector(".button-ok");
-var link = document.querySelector(".button-close");
+var linkOk = document.querySelector(".button--ok");
+var link = document.querySelector(".button--close");
 var form = document.querySelector("form");
 var surname = document.querySelector("[name=surname]");
 var firstname = document.querySelector("[name=firstname]");

@@ -1,24 +1,24 @@
 .radio {
   position: relative;
   display: block;
-  cursor: pointer;
   padding-bottom: 45px;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .radio__label {
   position: relative;
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
-  font-style: normal;
   line-height: 30px;
   color: @main-color;
 
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
-    left: -73px;
+    top: -8px;
+    left: -70px;
     width: 35px;
     height: 35px;
     border: 2px solid @grey-strong;
@@ -38,8 +38,8 @@
 .radio__control:checked + .radio__label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -59px;
+  top: 4px;
+  left: -58px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
