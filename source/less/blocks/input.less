@@ -5,20 +5,20 @@
 
 .input__label {
   margin-left: 22px;
+  font-style: normal;
   font-size: 14px;
   font-weight: 400;
-  font-style: normal;
-  color: @sec-color;
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
+  color: @sec-color;
 }
 
 .input__control {
   box-sizing: border-box;
+  min-height: 60px;
   margin-top: 6px;
   margin-bottom: 19px;
-  min-height: 60px;
   padding: 17px 20px;
   border: 2px solid @light-grey;
 
@@ -37,11 +37,11 @@
 }
 
 .input__control::-webkit-input-placeholder {
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
-  font-style: normal;
-  color: @main-color;
   line-height: 30px;
+  color: @main-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,8 +51,8 @@
   }
 
   .input__control {
-    flex-grow: 1;
     position: relative;
+    flex-grow: 1;
     margin-top: 0;
     margin-bottom: 55px;
   }
@@ -86,9 +86,9 @@
   .input--contacts::before {
     content: "";
     position: absolute;
-    z-index: 1;
     top: 2px;
     right: 57px;
+    z-index: 1;
     width: 60px;
     height: 56px;
     background-image: url("../img/icon-phone.svg");
@@ -100,9 +100,9 @@
   .input--contacts:nth-child(3)::before {
     content: "";
     position: absolute;
-    z-index: 1;
     top: 2px;
     right: 57px;
+    z-index: 1;
     width: 60px;
     height: 56px;
     background-image: url("../img/icon-mail.svg");
@@ -114,9 +114,9 @@
 
 @media (min-width: @desktop-width) {
   .input--contacts {
+    margin-bottom: 0;
     margin-left: 59px;
     margin-right: 13px;
-    margin-bottom: 0;
   }
 
   .input--contacts::before {
