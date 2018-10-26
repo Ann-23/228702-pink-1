@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  width: 150px;
+  width: 75px;
 }
 
 .logo__item {
@@ -23,24 +23,12 @@
   display: none;
 }
 
-.logo__intro {
-  fill: @main-color;
-
-  &:hover {
-    fill: @sec-color;
-  }
-
-  &:active {
-    fill: @main-color;
-    opacity: 0.3;
-  }
-}
-
-.logo__intro--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
+  .logo {
+    width: 150px;
+    padding-bottom: 12px;
+  }
+
   .logo__item--mobile {
     display: none;
   }
@@ -51,19 +39,6 @@
 
   .logo__item--desktop {
     display: none;
-  }
-
-  .logo__intro {
-    fill: @main-color;
-
-    &:hover {
-      fill: @sec-color;
-    }
-
-    &:active {
-      fill: @main-color;
-      opacity: 0.3;
-    }
   }
 }
 
@@ -77,14 +52,6 @@
   }
 
   .logo__item--desktop {
-    display: inline-block;
-  }
-
-  .logo__intro--mobile {
-    display: none;
-  }
-
-  .logo__intro--desktop {
     display: inline-block;
   }
 }

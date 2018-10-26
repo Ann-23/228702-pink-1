@@ -1,6 +1,7 @@
 .site-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,36 +11,25 @@
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-style: normal;
   font-size: 18px;
   font-weight: 700;
-  font-style: normal;
   line-height: 30px;
-  color: @white;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  color: @white;
   background-color: @main-color;
   border-top: 1px solid @blue-light;
   border-bottom: 1px solid @black;
 
   &:hover,
-  :focus {
+  &:focus {
     color: @sec-color;
   }
 
   &:active {
     color: @pink-30;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .site-list__link--active {
-    border-top: none;
-    box-shadow: inset 0 1px 3px 0 @black, 0 2px 0 0 @blue-light;
-  }
-
-  .site-list__link--not-active {
-    border-bottom: none;
   }
 }
 
@@ -68,5 +58,9 @@
   .site-list__link--active {
     border-bottom: 2px solid @white;
     box-shadow: none;
+  }
+
+  .site-list__item:not(:last-child) {
+    padding-right: 3px;
   }
 }

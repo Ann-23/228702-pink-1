@@ -48,8 +48,8 @@
   .reviews__wrapper::before {
     content: "";
     position: absolute;
-    top: 52px;
-    left: 435px;
+    top: 72px;
+    left: 442px;
     width: 77px;
     height: 64px;
     background-image: url("../img/icon-quotes.svg");
@@ -57,9 +57,9 @@
   }
 
   .reviews__list {
+    padding-bottom: 12px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-bottom: 12px;
   }
 
   .reviews__toggles {
@@ -69,17 +69,13 @@
   .reviews__row {
     display: block;
     position: absolute;
-    width: 51px;
-    height: 24px;
+    width: 22px;
+    height: 42px;
     padding: 0;
     background-color: transparent;
     border: 0;
-    cursor: pointer;
-  }
-
-  .reviews__row-left,
-  .reviews__row-right {
     fill: @blue-dark-30;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -91,13 +87,17 @@
     }
   }
 
+  .reviews__icon {
+    position: relative;
+  }
+
   .reviews__row--left {
-    top: 215px;
-    left: 20px;
+    top: 213px;
+    left: 10px;
   }
 
   .reviews__row--right {
-    top: 215px;
-    right: 20px;
+    top: 213px;
+    right: 10px;
   }
 }

@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  padding-top: 44px;
+  padding-top: 42px;
   padding-bottom: 20px;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .contacts__map::after {
-  z-index: -1;
   content: "";
   position: absolute;
-  top: 96px;
-  left: 139px;
+  top: 94px;
+  left: 144px;
+  z-index: -1;
   width: 36px;
   height: 36px;
   background-image: url("../img/icon-map-marker.svg");
@@ -33,12 +33,12 @@
 
 .contacts__text {
   margin: 0;
+  font-style: normal;
   font-size: 24px;
   font-weight: 100;
-  font-style: normal;
   line-height: 30px;
-  color: @main-color;
   text-align: center;
+  color: @main-color;
 }
 
 .contacts__text--title {
@@ -50,8 +50,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: @main-color;
   text-align: center;
+  color: @main-color;
 }
 
 .contacts__cell {
@@ -67,26 +67,26 @@
 
   &:hover,
   &:focus {
-    color: @main-color;
     text-decoration: underline;
+    color: @main-color;
   }
 
   &:active {
-    color: @blue-dark-30;
     text-decoration: none;
+    color: @blue-dark-30;
   }
 }
 
 @media (min-width: @tablet-width) {
   .contacts__map::before {
-    top: -1px;
+    top: -2px;
     height: 100px;
     background-size: 100% 70%;
   }
 
   .contacts__map::after {
-    top: 175px;
-    left: 310px;
+    top: 192px;
+    left: 314px;
   }
 
   .contacts__wrapper {
@@ -110,26 +110,44 @@
   }
 
   .contacts__cell {
-    width: 250px;
     padding-bottom: 45px;
+  }
+
+  .contacts__cell--link {
+    width: 206px;
+  }
+
+  .contacts__cell--mail {
+    width: 222px;
+  }
+
+  .contacts__cell--address {
+    width: 211px;
+    margin-left: 23px;
+    margin-right: 23px;
+    padding-bottom: 27px;
+  }
+
+  .contacts__title--mail {
+    margin-left: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__map::before {
     top: -2px;
-    height: 180px;
+    height: 160px;
     background-size: 101% 57%;
   }
 
   .contacts__map::after {
-    top: 284px;
-    left: 454px;
+    top: 247px;
+    left: 463px;
   }
 
   .contacts__wrapper {
     padding-top: 62px;
-    padding-bottom: 1px;
+    padding-bottom: 35px;
   }
 
   .contacts__intro {
@@ -160,7 +178,7 @@
 
   .contacts__cell--address {
     order: 2;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 6px;
+    margin-right: -8px;
   }
 }
