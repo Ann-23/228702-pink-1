@@ -25,6 +25,15 @@
   line-height: 30px;
   color: @main-color;
   border: 2px solid @light-grey;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @main-color;
+  }
+
+  &:active {
+    border: 2px solid @sec-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
